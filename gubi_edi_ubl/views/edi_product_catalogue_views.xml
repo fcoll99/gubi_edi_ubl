@@ -1,0 +1,77 @@
+<odoo>
+    <record id="product_catalogues_form" model="ir.ui.view">
+        <field name="name">Product Catalogue Tree</field>
+        <field name="model">edi.product.catalogue</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button
+                        name="send_product_button"
+                        string="Send Catalog"
+                        class="oe_highlight"
+                        type="object"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-retweet"
+                            attrs="{'invisible': [('exchange_record_count', '=', 0)]}"
+                            name="action_view_edi_records"
+                        >
+                            <div class="o_stat_info">
+                                <field
+                                    name="exchange_record_count"
+                                    class="o_stat_value"
+                                />
+                                <span class="o_stat_text">EDI</span>
+                            </div>
+                        </button>
+                    </div>
+                    <group>
+                        <field name="name" />
+                    </group>
+                    <group>
+                        <field name="partner_id" />
+                        <field name="company_id" />
+                        <field name="backend_id" />
+                    </group>
+                    <group>
+                        <field name="item_ids">
+                            <tree>
+                                <field name="item_number" />
+                                <field name="name" />
+                                <field name="lst_price" />
+                                <field name="qty_available" />
+                                <field name="product_name" />
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="product_catalogue_tree_view" model="ir.ui.view">
+        <field name="name">EDI Product Catalogue List</field>
+        <field name="model">edi.product.catalogue</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="company_id" />
+            </tree>
+        </field>
+    </record>
+    <record id="product_catalogue_action" model="ir.actions.act_window">
+        <field name="name">EDI Product Catalogues</field>
+        <field name="res_model">edi.product.catalogue</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem
+        name="EDI Product Catalogues"
+        id="product_catalogue_menu"
+        parent="edi.menu_edi_config"
+        action="product_catalogue_action"
+    />
+</odoo>

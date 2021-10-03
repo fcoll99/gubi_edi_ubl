@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res_partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="gubi_edi" string="EDI">
+                    <group>
+                        <field name="sps_customer_vendor_code" />
+                        <field name="sps_transaction_code" />
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_partner_catalogues" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_get_edi_catalogue"
+                    attrs="{'invisible': [('edi_catalogue_count', '=', 0)]}"
+                    icon="fa-book"
+                >
+                    <field
+                        string="EDI Catalogue"
+                        name="edi_catalogue_count"
+                        widget="statinfo"
+                    />
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>

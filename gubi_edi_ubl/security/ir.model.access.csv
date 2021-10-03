@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_catalogue,edi.product.catalogue_user,model_edi_product_catalogue,base.group_user,1,0,0,0
+access_catalogue_manager,edi.product.catalogue_manager,model_edi_product_catalogue,base_edi.group_edi_manager,1,1,1,1

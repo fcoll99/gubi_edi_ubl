@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="gubi_sale_order_form">
+        <field name="name">gubi.sale.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <page name="other_information" position="inside">
+                <group name="sps" string="SPS">
+                    <field name="sps_client_order_ref" />
+                    <field name="sps_order_create_date" />
+                    <field name="sps_transport_method_code" />
+                </group>
+            </page>
+        </field>
+    </record>
+</odoo>
