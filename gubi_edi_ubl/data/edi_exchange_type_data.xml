@@ -3,15 +3,8 @@
     <record id="gubi_edi_exchange_type_ubl_invoice_out" model="edi.exchange.type">
         <field name="name">Invoice Out</field>
         <field name="code">invoice_out</field>
-        <field name="backend_id" ref="gubi_edi_ubl.gubi_edi_backend_sps_invoice" />
+        <field name="backend_id" ref="gubi_edi_ubl.gubi_edi_backend_sps" />
         <field name="backend_type_id" ref="gubi_edi_ubl.gubi_edi_backend_type_ubl" />
-        <field name="direction">output</field>
-        <field name="exchange_file_ext">xml</field>
-    </record>
-    <record id="gubi_edi_exchange_type_sps_picking_out" model="edi.exchange.type">
-        <field name="name">Picking Out SPS</field>
-        <field name="code">picking_out</field>
-        <field name="backend_type_id" ref="gubi_edi_ubl.gubi_edi_backend_type_sps" />
         <field name="direction">output</field>
         <field name="exchange_file_ext">xml</field>
     </record>
@@ -25,7 +18,7 @@
     <record id="gubi_edi_exchange_type_ubl_catalogue_out" model="edi.exchange.type">
         <field name="name">Catalogue Out</field>
         <field name="code">catalogue_out</field>
-        <field name="backend_id" ref="gubi_edi_ubl.gubi_edi_backend_sps_catalogue" />
+        <field name="backend_id" ref="gubi_edi_ubl.gubi_edi_backend_sps" />
         <field name="backend_type_id" ref="gubi_edi_ubl.gubi_edi_backend_type_ubl" />
         <field name="direction">output</field>
         <field name="exchange_file_ext">xml</field>
@@ -33,7 +26,7 @@
     <record id="gubi_edi_exchange_type_ubl_order_in" model="edi.exchange.type">
         <field name="name">Order In</field>
         <field name="code">order_in</field>
-        <field name="backend_id" ref="gubi_edi_ubl.gubi_edi_backend_sps_order" />
+        <field name="backend_id" ref="gubi_edi_ubl.gubi_edi_backend_sps" />
         <field name="backend_type_id" ref="gubi_edi_ubl.gubi_edi_backend_type_ubl" />
         <field name="direction">input</field>
         <field name="exchange_file_ext">xml</field>
@@ -41,7 +34,7 @@
     <record id="gubi_edi_exchange_type_ubl_order_out" model="edi.exchange.type">
         <field name="name">Order Out</field>
         <field name="code">order_out</field>
-        <field name="backend_id" ref="gubi_edi_ubl.gubi_edi_backend_purchase_order" />
+        <field name="backend_id" ref="gubi_edi_ubl.gubi_edi_backend_sps" />
         <field name="backend_type_id" ref="gubi_edi_ubl.gubi_edi_backend_type_ubl" />
         <field name="direction">output</field>
         <field name="exchange_file_ext">xml</field>
