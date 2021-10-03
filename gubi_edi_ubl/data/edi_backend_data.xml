@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo noupdate="1">
-    <record id="gubi_edi_backend_sps_order" model="edi.backend">
-        <field name="name">SPS 850 Order</field>
-        <field name="backend_type_id" ref="gubi_edi_ubl.gubi_edi_backend_type_ubl" />
-    </record>
-    <record id="gubi_edi_backend_sps_invoice" model="edi.backend">
-        <field name="name">SPS 810 Invoice</field>
-        <field name="backend_type_id" ref="gubi_edi_ubl.gubi_edi_backend_type_ubl" />
-    </record>
-    <record id="gubi_edi_backend_purchase_order" model="edi.backend">
-        <field name="name">Purchase Order</field>
-        <field name="backend_type_id" ref="gubi_edi_ubl.gubi_edi_backend_type_ubl" />
-    </record>
-    <record id="gubi_edi_backend_sps_catalogue" model="edi.backend">
-        <field name="name">SPS 832 Catalogue</field>
+    <record id="gubi_edi_backend_sps" model="edi.backend">
+        <field name="name">SPS Commerce Backend</field>
         <field name="backend_type_id" ref="gubi_edi_ubl.gubi_edi_backend_type_ubl" />
     </record>
 </odoo>

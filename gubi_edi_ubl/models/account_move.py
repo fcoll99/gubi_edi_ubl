@@ -176,7 +176,6 @@ class AccountMove(models.Model):
             price_extension, ns["cbc"] + "Amount", currencyID=cur_name
         )
         line_total_node.text = str(line_total_str)
-
         # END OF CHANGES
 
     # TODO: use partner_id instead of the commercial_id in parties to set the address

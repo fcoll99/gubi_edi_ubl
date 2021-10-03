@@ -4,8 +4,4 @@
         <field name="name">Gubi UBL</field>
         <field name="code">gubi_ubl</field>
     </record>
-    <record id="gubi_edi_backend_type_sps" model="edi.backend.type">
-        <field name="name">SPS UBL</field>
-        <field name="code">sps_ubl</field>
-    </record>
 </odoo>
