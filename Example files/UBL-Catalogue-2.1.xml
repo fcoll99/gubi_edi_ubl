@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:ID>Basic Catalogue</cbc:ID>
+  <cbc:IssueDate>2021-10-04</cbc:IssueDate>
+  <cac:ProviderParty>
+    <cbc:WebsiteURI>http://www.example.com</cbc:WebsiteURI>
+    <cac:PartyName>
+      <cbc:Name>My Company (San Francisco)</cbc:Name>
+    </cac:PartyName>
+    <cac:Language>
+      <cbc:Name>English (US)</cbc:Name>
+      <cbc:LocaleCode>en_US</cbc:LocaleCode>
+    </cac:Language>
+    <cac:PostalAddress>
+      <cbc:StreetName>250 Executive Park Blvd, Suite 3400</cbc:StreetName>
+      <cbc:CityName>San Francisco</cbc:CityName>
+      <cbc:PostalZone>94134</cbc:PostalZone>
+      <cbc:CountrySubentity>California</cbc:CountrySubentity>
+      <cbc:CountrySubentityCode>CA</cbc:CountrySubentityCode>
+      <cac:Country>
+        <cbc:IdentificationCode>US</cbc:IdentificationCode>
+        <cbc:Name>United States</cbc:Name>
+      </cac:Country>
+    </cac:PostalAddress>
+    <cac:PartyLegalEntity>
+      <cbc:RegistrationName>My Company (San Francisco)</cbc:RegistrationName>
+      <cac:RegistrationAddress>
+        <cbc:StreetName>250 Executive Park Blvd, Suite 3400</cbc:StreetName>
+        <cbc:CityName>San Francisco</cbc:CityName>
+        <cbc:PostalZone>94134</cbc:PostalZone>
+        <cbc:CountrySubentity>California</cbc:CountrySubentity>
+        <cbc:CountrySubentityCode>CA</cbc:CountrySubentityCode>
+        <cac:Country>
+          <cbc:IdentificationCode>US</cbc:IdentificationCode>
+          <cbc:Name>United States</cbc:Name>
+        </cac:Country>
+      </cac:RegistrationAddress>
+    </cac:PartyLegalEntity>
+    <cac:Contact>
+      <cbc:Telephone>+1 (650) 691-3277 </cbc:Telephone>
+      <cbc:ElectronicMail>info@yourcompany.example.com</cbc:ElectronicMail>
+    </cac:Contact>
+  </cac:ProviderParty>
+  <cac:ReceiverParty>
+    <cbc:WebsiteURI>http://www.azure-interior.com</cbc:WebsiteURI>
+    <cac:PartyName>
+      <cbc:Name>Azure Interior</cbc:Name>
+    </cac:PartyName>
+    <cac:Language>
+      <cbc:Name>English (US)</cbc:Name>
+      <cbc:LocaleCode>en_US</cbc:LocaleCode>
+    </cac:Language>
+    <cac:PostalAddress>
+      <cbc:StreetName>4557 De Silva St</cbc:StreetName>
+      <cbc:CityName>Fremont</cbc:CityName>
+      <cbc:PostalZone>94538</cbc:PostalZone>
+      <cbc:CountrySubentity>California</cbc:CountrySubentity>
+      <cbc:CountrySubentityCode>CA</cbc:CountrySubentityCode>
+      <cac:Country>
+        <cbc:IdentificationCode>US</cbc:IdentificationCode>
+        <cbc:Name>United States</cbc:Name>
+      </cac:Country>
+    </cac:PostalAddress>
+    <cac:Contact>
+      <cbc:Telephone>(870)-931-0505</cbc:Telephone>
+      <cbc:ElectronicMail>azure.Interior24@example.com</cbc:ElectronicMail>
+    </cac:Contact>
+  </cac:ReceiverParty>
+  <cac:CatalogueLine>
+    <cbc:ID>1</cbc:ID>
+    <cac:ItemComparison>
+      <cbc:PriceAmount currencyID="USD">750.0</cbc:PriceAmount>
+    </cac:ItemComparison>
+    <cac:Item>
+      <cbc:Description>Customizable Desk (CONFIG)</cbc:Description>
+      <cbc:Name>Customizable Desk (CONFIG) (Steel, Aluminium, Custom, White, Black)</cbc:Name>
+      <cac:SellersItemIdentification>
+        <cbc:ID>10000198</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>Legs</cbc:Name>
+        <cbc:Value>Steel</cbc:Value>
+      </cac:AdditionalItemProperty>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>Legs</cbc:Name>
+        <cbc:Value>Aluminium</cbc:Value>
+      </cac:AdditionalItemProperty>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>Legs</cbc:Name>
+        <cbc:Value>Custom</cbc:Value>
+      </cac:AdditionalItemProperty>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>Color</cbc:Name>
+        <cbc:Value>White</cbc:Value>
+      </cac:AdditionalItemProperty>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>Color</cbc:Name>
+        <cbc:Value>Black</cbc:Value>
+      </cac:AdditionalItemProperty>
+    </cac:Item>
+  </cac:CatalogueLine>
+  <cac:CatalogueLine>
+    <cbc:ID>2</cbc:ID>
+    <cac:ItemComparison>
+      <cbc:PriceAmount currencyID="USD">1.98</cbc:PriceAmount>
+    </cac:ItemComparison>
+    <cac:Item>
+      <cbc:Description>Wall Shelf Unit</cbc:Description>
+      <cbc:Name>Wall Shelf Unit</cbc:Name>
+      <cac:SellersItemIdentification>
+        <cbc:ID>10000017</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeAgencyID="6" schemeID="GTIN">2100002000003</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+  </cac:CatalogueLine>
+</Catalogue>

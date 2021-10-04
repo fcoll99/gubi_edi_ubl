@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DespatchAdvice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:ID>DSV/OUT/19432</cbc:ID>
+  <cbc:IssueDate>2021-08-17</cbc:IssueDate>
+  <cbc:IssueTime>11:38:37</cbc:IssueTime>
+  <cac:OrderReference>
+    <cbc:ID>1010452819</cbc:ID>
+  </cac:OrderReference>
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>SO88743</cbc:ID>
+    <cbc:IssueDate>2021-08-13</cbc:IssueDate>
+  </cac:AdditionalDocumentReference>
+  <cac:DespatchSupplierParty>
+    <cac:DespatchContact>
+      <cbc:Name>Gubi</cbc:Name>
+    </cac:DespatchContact>
+  </cac:DespatchSupplierParty>
+  <cac:DeliveryCustomerParty>
+    <cac:Party>
+      <cac:PartyName>
+        <cbc:Name>Magasin - Online Shop</cbc:Name>
+      </cac:PartyName>
+      <cac:PostalAddress>
+        <cbc:StreetName>StreetName</cbc:StreetName>
+        <cbc:CityName>CityName</cbc:CityName>
+        <cbc:PostalZone>1095</cbc:PostalZone>
+        <cac:Country>
+          <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+          <cbc:Name>Denmark</cbc:Name>
+        </cac:Country>
+      </cac:PostalAddress>
+    </cac:Party>
+    <cac:BuyerContact>
+      <cbc:Name>ContactName</cbc:Name>
+    </cac:BuyerContact>
+  </cac:DeliveryCustomerParty>
+  <cac:Shipment>
+    <cbc:ID>DSV/OUT/19432</cbc:ID>
+    <cbc:GrossWeightMeasure unitCode="KG">4.94</cbc:GrossWeightMeasure>
+    <cbc:NetWeightMeasure unitCode="KG">2.38</cbc:NetWeightMeasure>
+    <cbc:GrossVolumeMeasure unitCode="m3">0.0</cbc:GrossVolumeMeasure>
+    <cbc:ConsignmentQuantity>4.0</cbc:ConsignmentQuantity>
+    <cac:ShipmentStage/>
+    <cac:Delivery>
+      <cbc:ActualDeliveryDate>2021-08-13</cbc:ActualDeliveryDate>
+      <cac:DeliveryAddress>
+        <cbc:StreetName>DeliveryStreet</cbc:StreetName>
+        <cbc:CityName>DeliveryCity</cbc:CityName>
+        <cbc:PostalZone>6000</cbc:PostalZone>
+        <cac:Country>
+          <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+          <cbc:Name>Denmark</cbc:Name>
+        </cac:Country>
+      </cac:DeliveryAddress>
+      <cac:DeliveryTerms>
+        <cbc:ID schemeAgencyID="6" schemeID="INCOTERM">DDP</cbc:ID>
+      </cac:DeliveryTerms>
+    </cac:Delivery>
+  </cac:Shipment>
+  <cac:DespatchLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:DeliveredQuantity unitCode="EA">1.0</cbc:DeliveredQuantity>
+    <cac:OrderLineReference>
+      <cbc:LineID></cbc:LineID>
+    </cac:OrderLineReference>
+    <cac:Item>
+      <cbc:Description>BL7 Wall Lamp - Ø16, Chrome base, EU</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>10010270</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeAgencyID="6" schemeID="GTIN">5710902040732</cbc:ID>
+      </cac:StandardItemIdentification>
+      <cac:OriginCountry>
+        <cbc:IdentificationCode>CN</cbc:IdentificationCode>
+        <cbc:Name>China</cbc:Name>
+      </cac:OriginCountry>
+    </cac:Item>
+    <cac:Shipment>
+      <cbc:ID>Shipment Information</cbc:ID>
+      <cbc:GrossWeightMeasure unitCode="KG">1.29</cbc:GrossWeightMeasure>
+      <cbc:GrossVolumeMeasure unitCode="m³">0.015288</cbc:GrossVolumeMeasure>
+      <cac:Delivery>
+        <cbc:ActualDeliveryDate>2021-08-13</cbc:ActualDeliveryDate>
+        <cac:CarrierParty>
+          <cac:PartyName>
+            <cbc:Name>DSV</cbc:Name>
+          </cac:PartyName>
+        </cac:CarrierParty>
+      </cac:Delivery>
+    </cac:Shipment>
+  </cac:DespatchLine>
+  <cac:DespatchLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:DeliveredQuantity unitCode="EA">1.0</cbc:DeliveredQuantity>
+    <cac:OrderLineReference>
+      <cbc:LineID></cbc:LineID>
+    </cac:OrderLineReference>
+    <cac:Item>
+      <cbc:Description>BL7 Wall Lamp - Ø16, Brass base, EU</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>10010253</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeAgencyID="6" schemeID="GTIN">5710902694829</cbc:ID>
+      </cac:StandardItemIdentification>
+      <cac:OriginCountry>
+        <cbc:IdentificationCode>CN</cbc:IdentificationCode>
+        <cbc:Name>China</cbc:Name>
+      </cac:OriginCountry>
+    </cac:Item>
+    <cac:Shipment>
+      <cbc:ID>Shipment Information</cbc:ID>
+      <cbc:GrossWeightMeasure unitCode="KG">1.29</cbc:GrossWeightMeasure>
+      <cbc:GrossVolumeMeasure unitCode="m³">0.015288</cbc:GrossVolumeMeasure>
+      <cac:Delivery>
+        <cbc:ActualDeliveryDate>2021-08-13</cbc:ActualDeliveryDate>
+        <cac:CarrierParty>
+          <cac:PartyName>
+            <cbc:Name>DSV</cbc:Name>
+          </cac:PartyName>
+        </cac:CarrierParty>
+      </cac:Delivery>
+    </cac:Shipment>
+  </cac:DespatchLine>
+  <cac:DespatchLine>
+    <cbc:ID>3</cbc:ID>
+    <cbc:DeliveredQuantity unitCode="EA">2.0</cbc:DeliveredQuantity>
+    <cac:OrderLineReference>
+      <cbc:LineID></cbc:LineID>
+    </cac:OrderLineReference>
+    <cac:Item>
+      <cbc:Description>BL9 Pendant - Ø16 (S), Chrome base</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>10010304</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeAgencyID="6" schemeID="GTIN">5710902040770</cbc:ID>
+      </cac:StandardItemIdentification>
+      <cac:OriginCountry>
+        <cbc:IdentificationCode>CN</cbc:IdentificationCode>
+        <cbc:Name>China</cbc:Name>
+      </cac:OriginCountry>
+    </cac:Item>
+    <cac:Shipment>
+      <cbc:ID>Shipment Information</cbc:ID>
+      <cbc:GrossWeightMeasure unitCode="KG">1.18</cbc:GrossWeightMeasure>
+      <cbc:GrossVolumeMeasure unitCode="m³">0.015</cbc:GrossVolumeMeasure>
+      <cac:Delivery>
+        <cbc:ActualDeliveryDate>2021-08-13</cbc:ActualDeliveryDate>
+        <cac:CarrierParty>
+          <cac:PartyName>
+            <cbc:Name>DSV</cbc:Name>
+          </cac:PartyName>
+        </cac:CarrierParty>
+      </cac:Delivery>
+    </cac:Shipment>
+  </cac:DespatchLine>
+</DespatchAdvice>
